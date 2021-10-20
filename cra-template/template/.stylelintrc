@@ -1,0 +1,19 @@
+{
+  "defaultSeverity": "warning",
+  "plugins": [
+    "stylelint-prettier",
+    "stylelint-a11y",
+    "stylelint-high-performance-animation",
+    "stylelint-declaration-block-no-ignored-properties"
+  ],
+	"extends": [
+    "stylelint-config-prettier",
+    "stylelint-config-rational-order",
+    "stylelint-a11y/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": true,
+    "plugin/no-low-performance-animation-properties": true,
+    "plugin/declaration-block-no-ignored-properties": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{ "path": "./src", "name": "🗒️ ./src/" },
+		{ "path": "./public", "name": "📁 ./public/" },
+		{ "path": ".", "name": "🔧 ./" },
+		{ "path": "./node_modules", "name": "( node_modules )" },
+		{ "path": "./build", "name": "( build )" }
+	],
+	"settings": {
+    "cSpell.workspaceRootPath": "${workspaceFolder:🔧 ./}",
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "stylelint.enable": true,
+		"files.associations": {
+      ".browserslistrc": "browserslist",
+      ".*ignore": "ignore",
+			".czrc": "json",
+			".lintstagedrc": "json",
+			".prettierrc": "json",
+			".stylelintrc": "json"
+		},
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "build/": true,
+      "node_modules/": true,
+      "public/": true,
+      "src/": true,
+    },
+    "explorer.sortOrder": "type"
+	}
+}

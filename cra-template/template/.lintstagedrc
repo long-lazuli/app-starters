@@ -1,0 +1,6 @@
+{
+  "*.(js|jsx|ts|tsx)": "eslint --fix",
+  "*.(css|scss)": "stylelint --fix",
+  "(*.json,.czrc,.lintstagedrc,.prettierrc,.stylelintrc)": "eslint --fix --ext json",
+  "package.json": "sort-package-json"
+}

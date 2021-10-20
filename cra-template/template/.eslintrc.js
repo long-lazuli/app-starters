@@ -1,0 +1,47 @@
+module.exports = {
+  env: { browser: true, es2021: true, jest: true },
+  parserOptions: { ecmaFeatures: { jsx: true }, ecmaVersion: 5, sourceType: 'module' },
+  settings: { react: { version: 'detect' }, jest: { version: 26 } },
+  plugins: [
+    '@typescript-eslint',
+    'import',
+    'jest',
+    'json',
+    'jsx-a11y',
+    'prettier',
+    'react',
+    'react-hooks',
+    'simple-import-sort',
+  ],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+    'plugin:jest/recommended',
+    'plugin:json/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:prettier/recommended',
+    'plugin:react/recommended',
+    'prettier',
+  ],
+  rules: {
+    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    'prettier/prettier': 'warn',
+    'react/react-in-jsx-scope': 'off',
+    'simple-import-sort/exports': 'warn',
+    'simple-import-sort/imports': 'warn',
+  },
+  overrides: [
+    {
+      files: ['**/*.ts', '**/*.tsx'],
+      parser: '@typescript-eslint/parser',
+      rules: {
+        '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+        'react/prop-types': 'off',
+      },
+    },
+    { files: ['*.js'], env: { node: true, commonjs: true } },
+    { files: ['**/*.stories.tsx'], rules: { 'no-console': 'off' } },
+  ],
+}

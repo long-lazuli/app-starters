@@ -1,0 +1,22 @@
+{
+  "name": "@long-lazuli/cra-template",
+  "version": "0.0.5",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/long-lazuli/app-starters.git",
+    "directory": "cra-template"
+  },
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "typescript",
+    "eslint",
+    "husky",
+    "lint-staged"
+  ],
+  "bugs": {
+    "url": "https://github.com/long-lazuli/app-starters/issues"
+  }
+}

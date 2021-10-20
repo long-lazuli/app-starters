@@ -1,0 +1,17 @@
+{
+    "version": "0.2",
+    "words": [
+        "clsx",
+        "textblock"
+    ],
+    "ignoreRegExpList": [
+        "from '(.*)'"
+    ],
+    "ignorePaths": [
+        ".*",
+        "dev.code-workspace",
+        "package.json",
+        "tsconfig.json",
+        "yarn.lock"
+    ]
+}
